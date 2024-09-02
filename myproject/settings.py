@@ -33,7 +33,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host', 'jackson.jacksonandalice.com']
+ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host', 'jackson.jacksonandalice.com', '127.0.0.1']
+
+# ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host', 'jackson.jacksonandalice.com']
 CSRF_TRUSTED_ORIGINS  = ['https://nolimit-jacksonapp.fjyxll.easypanel.host', 'https://jackson.jacksonandalice.com']
 
 
@@ -83,13 +85,20 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": 'django.db.backends.postgresql',
+#         "NAME": env('DB_NAME'),
+#         "HOST": env('DB_HOST'),
+#         "USER": env('DB_USER'),
+#         "PASSWORD": env('DB_PASSWORD'),
+#     }
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": 'django.db.backends.postgresql',
-        "NAME": env('DB_NAME'),
-        "HOST": env('DB_HOST'),
-        "USER": env('DB_USER'),
-        "PASSWORD": env('DB_PASSWORD'),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
 
