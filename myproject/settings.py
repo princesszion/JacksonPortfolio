@@ -33,7 +33,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host/','jacksonandalice.com']
+ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host', 'jackson.jacksonandalice.com']
 
 
 # Application definition
