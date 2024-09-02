@@ -34,6 +34,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['nolimit-jacksonapp.fjyxll.easypanel.host', 'jackson.jacksonandalice.com']
+CSRF_TRUSTED_ORIGINS  = ['https://nolimit-jacksonapp.fjyxll.easypanel.host', 'https://jackson.jacksonandalice.com']
 
 
 # Application definition
